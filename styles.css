@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Outfit";
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: hsl(30, 54%, 90%);
+  line-height: 1.6rem;
+  color: hsl(30, 10%, 34%);
+}
+ul {
+  list-style-position: inside;
+}
+hr {
+  color: hsl(30, 18%, 87%);
+  border: 1px solid hsl(30, 18%, 87%);
+  background-color: hsl(30, 18%, 87%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: hsl(0, 0%, 100%);
+  width: 50%;
+  padding: 25px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+}
+.card .recipe-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card .section {
+  margin: 15px 0;
+}
+.card .section-title {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif";
+  margin: 7px 0;
+}
+.card .overview .section-title {
+  color: hsl(24, 5%, 18%);
+}
+.card .preparation-time .section-title {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit";
+}
+.card .preparation-time {
+  background: hsl(330, 100%, 98%);
+  padding: 5px 15px;
+}
+.card .preparation-time li,
+.card .instructions li {
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.card .instructions {
+  line-height: 1.2rem;
+}
+.card .instructions ol {
+  padding-left: 10px;
+}
+.card .preparation-time li .sub-text,
+.card .instructions li .sub-text {
+  font-weight: 400;
+}
+.card .nutrition table {
+  width: 100%;
+  text-align: left;
+}
+.card .nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.card .nutrition table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.card .nutrition table tr:last-child {
+  border-bottom: none;
+}
+.card .nutrition table th {
+  font-weight: 400;
+  padding: 5px 0;
+  padding-left: 20px;
+}
+.card .nutrition table td {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  padding: 5px 0;
+}
+.card .overview p {
+  line-height: 1.2rem;
+}
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+}
